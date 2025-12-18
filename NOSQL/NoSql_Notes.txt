@@ -1,0 +1,199 @@
+🔹 What is NoSQL?
+
+NoSQL (Not Only SQL) is a category of databases designed to store and manage large volumes of unstructured, semi-structured, or structured data.
+
+👉 NoSQL databases do NOT rely on tables, rows, and columns like SQL.
+
+🔹 Why Do We Use NoSQL?
+
+To handle big data and high traffic
+
+To scale easily (horizontal scaling)
+
+To store flexible data formats
+
+To support real-time applications
+
+To work well with cloud & microservices
+
+Used in:
+
+Social media apps
+
+E-commerce platforms
+
+IoT systems
+
+Real-time analytics
+
+Distributed systems
+
+🔹 What is a NoSQL Database?
+
+A NoSQL database stores data in formats like:
+
+Documents
+
+Key-Value pairs
+
+Columns
+
+Graphs
+
+It allows schema-less or dynamic schema design.
+
+🔹 Types of NoSQL Databases
+1️⃣ Document-Based Databases
+
+Stores data as JSON-like documents
+
+Example document:
+
+{
+  "emp_id": 101,
+  "name": "Hemant",
+  "role": "Developer",
+  "skills": ["Python", "SQL"]
+}
+
+
+Popular databases:
+
+MongoDB
+
+CouchDB
+
+Used when:
+✔ Data structure changes frequently
+✔ Nested data is required
+
+2️⃣ Key-Value Databases
+
+Stores data as key → value
+
+Example:
+
+"user_101" → "Hemant"
+
+
+Popular databases:
+
+Redis
+
+DynamoDB
+
+Used when:
+✔ Fast lookups are needed
+✔ Caching & sessions
+
+3️⃣ Column-Based Databases
+
+Stores data in columns instead of rows
+
+Example:
+
+RowKey | Name     | Salary
+101    | Hemant   | 50000
+
+
+Popular databases:
+
+Cassandra
+
+HBase
+
+Used when:
+✔ Huge datasets
+✔ High write performance
+
+4️⃣ Graph Databases
+
+Stores data as nodes & relationships
+
+Example:
+
+(Hemant) -[WORKS_AT]-> (Company)
+
+
+Popular databases:
+
+Neo4j
+
+Amazon Neptune
+
+Used when:
+✔ Relationship-heavy data
+✔ Social networks, recommendations
+
+🔹 Schema-Less Design
+
+Unlike SQL:
+
+No fixed table structure
+
+Fields can vary per record
+
+Easy to add new fields
+
+Example:
+
+{ "name": "Hemant" }
+{ "name": "Amit", "age": 28 }
+
+🔹 SQL vs NoSQL (Quick Comparison)
+Feature	SQL	NoSQL
+Data Model	Tables	Documents / Key-Value / Graph
+Schema	Fixed	Flexible
+Scaling	Vertical	Horizontal
+Joins	Supported	Limited / Not supported
+Transactions	Strong	Eventual consistency
+Best For	Structured data	Big & dynamic data
+🔹 Consistency in NoSQL (CAP Theorem)
+
+NoSQL follows CAP Theorem:
+
+C – Consistency
+
+A – Availability
+
+P – Partition Tolerance
+
+👉 NoSQL systems usually prioritize AP or CP, not all three.
+
+🔹 Popular NoSQL Databases
+
+MongoDB
+
+Redis
+
+Cassandra
+
+DynamoDB
+
+CouchDB
+
+Neo4j
+
+🔹 Real-Life Examples
+
+Instagram → NoSQL for posts & feeds
+
+Netflix → NoSQL for recommendations
+
+Amazon → NoSQL for cart & sessions
+
+WhatsApp → NoSQL for messaging
+
+🔹 Simple Summary
+
+✔ NoSQL handles large-scale data
+✔ Schema-less & flexible
+✔ Faster for read/write at scale
+✔ Best for modern cloud applications
+
+🔹 When to Choose NoSQL?
+
+Choose NoSQL when:
+✅ Data structure is flexible
+✅ Massive traffic is expected
+✅ Speed & scalability matter more than joins
